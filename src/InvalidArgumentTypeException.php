@@ -13,7 +13,7 @@ class InvalidArgumentTypeException extends \InvalidArgumentException
     
     
     /**
-     * @param string[]        $expectedTypes An array of expected type names.
+     * @param string|string[] $expectedTypes An array of expected type names.
      * @param int             $actualValue   The actual value received.
      * @param string          $message       An optional error message.
      * @param \Exception|null $previous
