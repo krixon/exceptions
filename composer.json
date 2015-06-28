@@ -1,0 +1,26 @@
+{
+  "name": "krixon/exceptions",
+  "type": "library",
+  "description": "A collection of useful Exceptions.",
+  "keywords": ["exception", "error"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Karl Rixon",
+      "email": "karl@karlrixon.co.uk",
+      "homepage": "http://www.karlrixon.co.uk"
+    }
+  ],
+  "require": {
+    "php": ">=5.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Krixon\\Exception\\Test\\": "tests",
+      "Krixon\\Exception\\": "src"
+    }
+  }
+}
