@@ -26,8 +26,6 @@ coding_style:
         spaces:
             around_operators:
                 concatenation: true
-            within:
-                brackets: true
             other:
                 after_type_cast: false
         braces:
