@@ -11,16 +11,15 @@ matrix:
   allow_failures:
     - php: hhvm
 
-before_script:
-  - curl -s http://getcomposer.org/installer | php
-  - php composer.phar install --dev --no-interaction
+before_install:
+    - composer self-update
+
+install:
+    - composer --prefer-source install
 
 script:
   - mkdir -p build/logs
   - php vendor/bin/phpunit -c phpunit.xml.dist
-
-before_install:
-    - composer self-update
 
 after_script:
     - php vendor/bin/coveralls -v
